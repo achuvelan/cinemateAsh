@@ -35,13 +35,13 @@ const MovieDetails = () => {
   const imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
   return (
     <div className="w-full max-w-7xl mx-auto p-8  text-black-700">
-      <div className="flex gap-20">
+      <div className="flex flex-col md:flex-row  gap-10">
         <img
           src={imgUrl}
           alt={movie.title}
-          className="w-96  rounded-lg shadow-lg"
+          className="w-full md:w-96  rounded-lg shadow-lg"
         />
-        <div className="flex-1 ">
+        <div className="flex-1 mt-6 md:mt-0">
           <h1 className="text-4xl font-bold mb-6">{movie.title}</h1>
           <p className="mb-6 leading-6 text-lg max-w-2xl">{movie.overview}</p>
           <p className="mb-6">

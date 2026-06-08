@@ -10,7 +10,7 @@ const Card = ({ movie, darkMode }) => {
         <img
           src={imageUrl}
           alt={movie.title}
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[400px] object-cover object-top"
         />
         <div className="p-4">
           <h2 className="font-bold text-lg h-16 overflow-hidden">

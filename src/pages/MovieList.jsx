@@ -39,7 +39,7 @@ const MovieList = ({ category, darkMode }) => {
         {/* <h1 >MovieList</h1> */}
 
         <section className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
             {movies.map((movie) => (
               <Card key={movie.id} movie={movie} darkMode={darkMode} />
             ))}
