@@ -105,9 +105,15 @@ export default function Header({ darkMode, setDarkMode }) {
                   type="text"
                   placeholder="Search..."
                   autoComplete="off"
-                  className="w-full bg-[#1e293b] text-white
-                   placeholder-gray-400 px-4 py-2 pl-12
-                   rounded-md border border-gray-700"
+                  // className="w-full bg-[#f4e562] text-white
+                  //  placeholder-gray-400 px-4 py-2 pl-12
+                  //  rounded-md border border-gray-700"
+
+                  className={`w-full ${
+                    darkMode
+                      ? "bg-[#1e293b] text-white placeholder-gray-400 border-gray-700"
+                      : "bg-white text-black placeholder-gray-500 border-gray-300"
+                  } px-4 py-2 pl-12 rounded-md border`}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   onKeyDown={handleSearch}
